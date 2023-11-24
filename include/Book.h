@@ -15,33 +15,18 @@ public:
     // funzioni restituizione dati membro
 
     std::string get_isbn() const ;
-    /* std::string get_isbn(){
-        return this->isbn;
-    }*/
 
     std::string get_author_name() const ;
-    /* std::string get_author_name(){
-        return this->author_name;
-    }*/
 
     std::string get_author_surname() const ;
-    /* std::string get_author_surname(){
-        return this->author_surname;
-    }*/
 
     std::string get_title() const ;
-    /* std::string get_title(){
-        return this->title;
-    }*/
 
     std::string get_string_date() const ;
     
-    Date::Date get_date() const ;
+    Date get_date() const ;
 
     bool get_availability() const ;
-    /* {
-        return this->available;
-    }*/
 
     // costruttore
 
@@ -65,41 +50,19 @@ public:
     // registrazione presitito e restituizione
 
     void get_loan();
-    /* void get_loan(){
-        if (!this->get_availability()) throw UnAvailableBook();
-        available=false;
-    }
-    */
 
     void return_loan();
-    /* void return_loan(){
-        if (this->get_availability()) throw InvalidStatusOperation();
-        available=true;
-    }
-    */
 
     // overloading operator== (isbn based)
     bool operator==(Book& other);
-    /* bool operator==(Book& other){
-        return this->isbn == other.isbn;
-    }    
-    */
 
     // overloading operator!= (isbn based)
     bool operator!=(Book& other);
-    /* bool operator!=(Book& other){
-        return this->isbn != other.isbn;
-    }    
-    */
 
 private:
 
     // controllo isbn
     void isbn_isValid();
-    /* void isbn_isValid(){
-        if(!(isbn.length()==13)) throw InvalidIsbnData();
-    }
-    */
 
     std::string isbn; // isbn libro da limitare a 13 caratteri
     std::string title; // titolo libro
@@ -111,11 +74,6 @@ private:
 }
 
 // overloading operator<< (row print of data)
-std::ostream& operator<<(std::ostream& os, Book& item);
-/* std::ostream& operator<<(std::ostream& os, Book& item){ // helper function to overload the << operator
-	return os   <<"Titolo: "<<item.get_title()<<std::endl
-                <<"Autore: "<<item.get_author_name()<<" "<<item.get_author_surname()<<std::endl
-                <<"ISBN:: " ;
-}*/
+std::ostream& operator<<(std::ostream& os, const Book& item);
 
 #endif // BOOK_H

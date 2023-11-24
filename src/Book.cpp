@@ -1,22 +1,22 @@
-#include<string>
+#include <string>
 #include <iostream>
 #include "../include/Book.h"
 #include "../include/Date.h"
 
 std::string Book::get_isbn() const {
-    return this->isbn;
+    return isbn;
 }
 
 std::string Book::get_author_name() const {
-    return this->author_name;
+    return author_name;
 }
 
 std::string Book::get_author_surname() const {
-    return this->author_surname;
+    return author_surname;
 }
 
 std::string Book::get_title() const {
-    return this->title;
+    return title;
 }
 
 std::string Book::get_string_date() const {
@@ -24,11 +24,11 @@ std::string Book::get_string_date() const {
 }
 
 Date Book::get_date() const {
-    return this->date;
+    return date;
 }
 
 bool Book::get_availability() const {
-    return this->available;
+    return available;
 }
 
 // costruttore
@@ -74,23 +74,23 @@ Book::Book(
 // registrazione presitito e restituizione
 
 void Book::get_loan(){
-    if (!(this->get_availability())) throw UnAvailableBook();
+    if (!(get_availability())) throw UnAvailableBook();
     available=false;
 }
 
 void Book::return_loan(){
-    if (this->get_availability()) throw InvalidStatusOperation();
+    if (get_availability()) throw InvalidStatusOperation();
     available=true;
 }
 
 // overloading operator== (isbn based)
 bool Book::operator==(Book& other){
-    return this->isbn == other.isbn;
+    return isbn == other.isbn;
 }    
 
 // overloading operator!= (isbn based)
 bool Book::operator!=(Book& other){
-    return this->isbn != other.isbn;
+    return isbn != other.isbn;
 }    
 
 // controllo isbn
@@ -99,18 +99,18 @@ void Book::isbn_isValid(){
 }
 
 // overloading operator<< (row print of data)
-std::ostream& operator<<(std::ostream& os, Book& item){ // helper function to overload the << operator
+std::ostream& operator<<(std::ostream& os, const Book& item){ // helper function to overload the << operator
 
     std::string datedate = "";
     if((item.get_date())==Date(3,2,1468)){
         datedate="invalid";
     } 
     else {
-        datedate=
+        datedate="";
     }
 
     return os   <<"Titolo: "<<item.get_title()<<std::endl
-            <<"Autore: "<<item.get_author_name()<<" "<<item.get_author_surname()<<std::endl
-            <<"ISBN:: "<<item.get_isbn()<<std::endl
-            <<"Data:: "<<datedate<<std::endl;
+                <<"Autore: "<<item.get_author_name()<<" "<<item.get_author_surname()<<std::endl
+                <<"ISBN:: "<<item.get_isbn()<<std::endl
+                <<"Data:: "<<datedate<<std::endl;
 }
