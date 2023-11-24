@@ -1,7 +1,7 @@
 #ifndef DATE_H
 #define DATE_H
 
-class Date {
+class Date{
 public:
     class InvalidDate{};  
 
@@ -11,13 +11,14 @@ public:
     int getMonth() const;
     int getYear() const;
 
-    bool operator==(Date& other);// overloading operator==
-    void operator=(Date& other);// overloading operator=
+    bool operator==(const Date& other) const;// overloading operator==
+    void operator=(const Date& other);// overloading operator=
+    
+    bool is_valid() const;
 
 private:
     int d, m, y;
     static int days_in_month[13];
-    bool is_valid() const;
     bool is_leap_year(int year) const;
     int getFebruary(int year) const;
 };

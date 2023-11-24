@@ -3,6 +3,7 @@
 
 CMakeFiles/BookTester.dir/src/Book.cpp.o: src/Book.cpp \
   /usr/include/stdc-predef.h \
+  include/Book.h \
   /usr/include/c++/11/string \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -152,6 +153,8 @@ CMakeFiles/BookTester.dir/src/Book.cpp.o: src/Book.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  include/Date.h \
+  include/Date.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -180,15 +183,8 @@ CMakeFiles/BookTester.dir/src/Book.cpp.o: src/Book.cpp \
   /usr/include/c++/11/bits/basic_ios.tcc \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
-  /usr/include/c++/11/bits/istream.tcc \
-  include/Book.h \
-  include/Date.h \
-  include/Date.h
+  /usr/include/c++/11/bits/istream.tcc
 
-
-include/Date.h:
-
-include/Book.h:
 
 /usr/include/c++/11/bits/istream.tcc:
 
@@ -230,6 +226,8 @@ include/Book.h:
 
 /usr/include/c++/11/ostream:
 
+include/Date.h:
+
 /usr/include/c++/11/bits/basic_string.tcc:
 
 /usr/include/c++/11/bits/charconv.h:
@@ -260,6 +258,8 @@ include/Book.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
 /usr/include/c++/11/cctype:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
@@ -273,6 +273,8 @@ include/Book.h:
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+include/Book.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
@@ -298,23 +300,19 @@ include/Book.h:
 
 /usr/include/stdint.h:
 
-/usr/include/c++/11/ios:
+/usr/include/c++/11/cstdint:
 
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+/usr/include/x86_64-linux-gnu/bits/sched.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
+
+/usr/include/ctype.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
@@ -352,9 +350,11 @@ include/Book.h:
 
 /usr/include/c++/11/bits/alloc_traits.h:
 
-/usr/include/x86_64-linux-gnu/sys/select.h:
+/usr/include/c++/11/ios:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
@@ -372,6 +372,12 @@ include/Book.h:
 
 /usr/include/c++/11/bits/ostream_insert.h:
 
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
 src/Book.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
@@ -379,6 +385,14 @@ src/Book.cpp:
 /usr/include/c++/11/string:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/c++/11/ext/numeric_traits.h:
+
+/usr/include/features.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/c++/11/bits/stl_function.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
@@ -389,10 +403,6 @@ src/Book.cpp:
 /usr/include/c++/11/bits/stringfwd.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/features.h:
-
-/usr/include/c++/11/ext/numeric_traits.h:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -448,19 +458,9 @@ src/Book.cpp:
 
 /usr/include/c++/11/string_view:
 
-/usr/include/stdc-predef.h:
+/usr/include/x86_64-linux-gnu/sys/select.h:
 
-/usr/include/c++/11/bits/stl_function.h:
-
-/usr/include/c++/11/cstdint:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
-
-/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
-
-/usr/include/ctype.h:
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 

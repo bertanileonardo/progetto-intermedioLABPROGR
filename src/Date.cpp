@@ -40,13 +40,13 @@ int Date::getFebruary(int year) const //ritorna 29 se è l'anno bisestile, 28 al
 }
 
 // overloading operator==
-bool Date::operator==(Date& other){
-    return ((this->d == other.getDay())&&(this->m == other.getMonth())&&(this->y == other.getYear()));
+bool Date::operator==(const Date& other) const {
+    return ((d == other.getDay())&&(m == other.getMonth())&&(y == other.getYear()));
 }    
 
 // overloading operator=
 void Date::operator=(Date& other){
-    this->d = other.getDay();
-    this->m = other.getMonth();
-    this->y = other.getYear();
+    d = other.getDay();
+    m = other.getMonth();
+    y = other.getYear();
 }  

@@ -1,7 +1,7 @@
-#include <string>
-#include <iostream>
 #include "../include/Book.h"
 #include "../include/Date.h"
+#include <iostream>
+#include <string>
 
 std::string Book::get_isbn() const {
     return isbn;
@@ -45,7 +45,7 @@ Book::Book(
     author_name{i_author_name}, 
     author_surname{i_author_surname}
 {
-    Date dateGut(3,2,1468);
+    Date::Date dateGut(3,2,1468);
     date = dateGut;
     available = true;
 };
@@ -79,7 +79,7 @@ void Book::get_loan(){
 }
 
 void Book::return_loan(){
-    if (get_availability()) throw InvalidStatusOperation();
+    if (get_availability()) throw InvalidStatusOperations();
     available=true;
 }
 
@@ -97,12 +97,13 @@ bool Book::operator!=(Book& other){
 void Book::isbn_isValid(){
     if(!(isbn.length()==13)) throw Book::InvalidIsbnData();
 }
-
+/*
 // overloading operator<< (row print of data)
 std::ostream& operator<<(std::ostream& os, const Book& item){ // helper function to overload the << operator
 
     std::string datedate = "";
-    if((item.get_date())==Date(3,2,1468)){
+    Date::Date dateGut(3,2,1468);
+    if((item.get_date())==dateGut){
         datedate="invalid";
     } 
     else {
@@ -114,3 +115,4 @@ std::ostream& operator<<(std::ostream& os, const Book& item){ // helper function
                 <<"ISBN:: "<<item.get_isbn()<<std::endl
                 <<"Data:: "<<datedate<<std::endl;
 }
+*/
