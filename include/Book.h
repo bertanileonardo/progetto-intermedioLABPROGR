@@ -1,3 +1,6 @@
+#include<string>
+#include "Date.h"
+
 #ifndef BOOK_H
 #define BOOK_H
 
@@ -11,32 +14,31 @@ public:
 
     // funzioni restituizione dati membro
 
-    std::string get_isbn();
+    std::string get_isbn() const ;
     /* std::string get_isbn(){
         return this->isbn;
     }*/
 
-    std::string get_author_name();
+    std::string get_author_name() const ;
     /* std::string get_author_name(){
         return this->author_name;
     }*/
 
-    std::string get_author_surname();
+    std::string get_author_surname() const ;
     /* std::string get_author_surname(){
         return this->author_surname;
     }*/
 
-    std::string get_title();
+    std::string get_title() const ;
     /* std::string get_title(){
         return this->title;
     }*/
 
-    Date::Date get_date();
-    /* Date::Date get_date(){
-        return this->date;
-    }*/
+    std::string get_string_date() const ;
+    
+    Date::Date get_date() const ;
 
-    bool get_availability();
+    bool get_availability() const ;
     /* {
         return this->available;
     }*/
@@ -44,21 +46,21 @@ public:
     // costruttore
 
     // costruttore con date implicita - 3 febbraio 1468 Morte di Gutenberg
-    Book(
-        std::string author_name;
-        std::string author_surname;
-        std::string title;
-        std::string isbn;
-        ){};
+    explicit Book(
+        std::string i_author_name,
+        std::string i_author_surname,
+        std::string i_title,
+        std::string i_isbn
+        );
 
     // costruttore con date esplicita
-    Book(
-        std::string author_name;
-        std::string author_surname;
-        std::string title;
-        std::string isbn;
-        Date::Date date;
-        ){};
+    explicit Book(
+        std::string i_author_name,
+        std::string i_author_surname,
+        std::string i_title,
+        std::string i_isbn,
+        Date i_date
+        );
 
     // registrazione presitito e restituizione
 
@@ -92,12 +94,6 @@ public:
 
 private:
 
-    // controllo data
-    void data_isValid();
-    /* void data_isValid(){
-        
-    }
-    */
     // controllo isbn
     void isbn_isValid();
     /* void isbn_isValid(){
@@ -109,7 +105,7 @@ private:
     std::string title; // titolo libro
     std::string author_name; // nome autore
     std::string author_surname; // cognome autore
-    Date::Date date; // data di copyright
+    Date date; // data di copyright
     bool available; // stato in prestito --> false, disponibile --> true
 
 }
