@@ -400,6 +400,7 @@ CMakeFiles/a.dir/src/BookShelf.cpp.o
  /home/bertaleo/progetto-intermedio/include/BookShelf.h
  /home/bertaleo/progetto-intermedio/include/Book.h
  /home/bertaleo/progetto-intermedio/include/Date.h
+ /home/bertaleo/progetto-intermedio/include/Book.h
 
 CMakeFiles/a.dir/src/Date.cpp.o
  /home/bertaleo/progetto-intermedio/src/Date.cpp

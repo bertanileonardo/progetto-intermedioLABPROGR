@@ -108,3 +108,14 @@ std::ostream& operator<<(std::ostream& os, const Book& item){ // helper function
 
     return os;
 }
+
+std::string to_string(const Book& item){
+    std::string output="";
+    output = output + "Titolo: " + item.get_title() + "\n"; 
+    output = output + "Autore: " + item.get_author_name() + " " + item.get_author_surname() + "\n"; 
+    output = output + "ISBN: " + item.get_isbn() + "\n"; 
+    output = output + "Data di copyright: " + item.get_string_date() + "\n";
+
+    return output;
+
+}

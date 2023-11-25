@@ -79,4 +79,6 @@ private:
 // overloading operator<< (row print of data)
 std::ostream& operator<<(std::ostream& os, const Book& item);
 
+std::string to_string(const Book& item);
+
 #endif // BOOK_H

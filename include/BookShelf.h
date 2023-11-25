@@ -66,7 +66,7 @@ private:
     int sz;       // size
 
     Book *elem;   // vettore di Book di lunghezza decisa in fase di costruzione
-                        // e poi immmodificabile allocato dinamicamente con un puntatore
+                  // e poi immmodificabile allocato dinamicamente con un puntatore
 
     int my_buffer_sz;
     

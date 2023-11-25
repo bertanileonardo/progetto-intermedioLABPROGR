@@ -2,6 +2,7 @@
 #include <stdexcept>
 #include <algorithm>  
 #include "../include/BookShelf.h"
+#include "../include/Book.h"
 
 BookShelf::BookShelf() : sz{k_default_size},elem{nullptr} {};
 
@@ -81,12 +82,16 @@ void BookShelf::reserve(int new_buffer_size){
 }
 
 std::ostream& operator<<(std::ostream& os, const BookShelf item){
-    
+  
+  std::string output="";
+
   for (int i = 0; i < item.size(); i++)
   {
-    os<<item[i]<<std::endl<<std::endl;
+    if(item[i].get_title() != ""){
+      output=output + to_string(item[i]) + "\n";
+    }
   }
 
-  return os;
+  return os << output;
 }
 

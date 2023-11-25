@@ -172,4 +172,5 @@ CMakeFiles/a.dir/src/BookShelf.cpp.o: \
  /usr/include/c++/11/pstl/execution_defs.h \
  /home/bertaleo/progetto-intermedio/src/../include/BookShelf.h \
  /home/bertaleo/progetto-intermedio/src/../include/Book.h \
- /home/bertaleo/progetto-intermedio/src/../include/Date.h
+ /home/bertaleo/progetto-intermedio/src/../include/Date.h \
+ /home/bertaleo/progetto-intermedio/src/../include/Book.h

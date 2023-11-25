@@ -24,16 +24,16 @@ int main(){
 
     BookShelf shelf(10);
     
-    std::cout<<"vettore creato correttamente";
+    std::cout<<"vettore creato correttamente"<<std::endl<<std::endl;
 
     shelf.push_back(mybook);
-    shelf.push_back(mybook2);
+    shelf.push_back(mybook4);
 
     std::cout<<shelf;
 
     Book removed_book = shelf.pop_back();
 
-    std::cout<<"removed: "<<std::endl<<removed_book;
+    std::cout<<"removed: "<<std::endl<<to_string(removed_book);
 
 
     return 0;

@@ -397,7 +397,8 @@ CMakeFiles/a.dir/src/BookShelf.cpp.o: src/BookShelf.cpp \
   /usr/include/c++/11/pstl/execution_defs.h \
   include/BookShelf.h \
   include/Book.h \
-  include/Date.h
+  include/Date.h \
+  include/Book.h
 
 CMakeFiles/a.dir/src/Date.cpp.o: src/Date.cpp \
   /usr/include/stdc-predef.h \
