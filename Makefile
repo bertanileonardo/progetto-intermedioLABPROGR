@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named BookTester
+# Target rules for targets named a
 
 # Build rule for target.
-BookTester: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BookTester
-.PHONY : BookTester
+a : cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 a
+.PHONY : a
 
 # fast build rule for target.
-BookTester/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookTester.dir/build.make CMakeFiles/BookTester.dir/build
-.PHONY : BookTester/fast
+a/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/build
+.PHONY : a/fast
 
 src/Book.o: src/Book.cpp.o
 .PHONY : src/Book.o
 
 # target to build an object file
 src/Book.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookTester.dir/build.make CMakeFiles/BookTester.dir/src/Book.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/Book.cpp.o
 .PHONY : src/Book.cpp.o
 
 src/Book.i: src/Book.cpp.i
@@ -142,7 +142,7 @@ src/Book.i: src/Book.cpp.i
 
 # target to preprocess a source file
 src/Book.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookTester.dir/build.make CMakeFiles/BookTester.dir/src/Book.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/Book.cpp.i
 .PHONY : src/Book.cpp.i
 
 src/Book.s: src/Book.cpp.s
@@ -150,7 +150,7 @@ src/Book.s: src/Book.cpp.s
 
 # target to generate assembly for a file
 src/Book.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookTester.dir/build.make CMakeFiles/BookTester.dir/src/Book.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/Book.cpp.s
 .PHONY : src/Book.cpp.s
 
 src/Date.o: src/Date.cpp.o
@@ -158,7 +158,7 @@ src/Date.o: src/Date.cpp.o
 
 # target to build an object file
 src/Date.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookTester.dir/build.make CMakeFiles/BookTester.dir/src/Date.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/Date.cpp.o
 .PHONY : src/Date.cpp.o
 
 src/Date.i: src/Date.cpp.i
@@ -166,7 +166,7 @@ src/Date.i: src/Date.cpp.i
 
 # target to preprocess a source file
 src/Date.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookTester.dir/build.make CMakeFiles/BookTester.dir/src/Date.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/Date.cpp.i
 .PHONY : src/Date.cpp.i
 
 src/Date.s: src/Date.cpp.s
@@ -174,7 +174,7 @@ src/Date.s: src/Date.cpp.s
 
 # target to generate assembly for a file
 src/Date.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookTester.dir/build.make CMakeFiles/BookTester.dir/src/Date.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/Date.cpp.s
 .PHONY : src/Date.cpp.s
 
 src/test.o: src/test.cpp.o
@@ -182,7 +182,7 @@ src/test.o: src/test.cpp.o
 
 # target to build an object file
 src/test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookTester.dir/build.make CMakeFiles/BookTester.dir/src/test.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/test.cpp.o
 .PHONY : src/test.cpp.o
 
 src/test.i: src/test.cpp.i
@@ -190,7 +190,7 @@ src/test.i: src/test.cpp.i
 
 # target to preprocess a source file
 src/test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookTester.dir/build.make CMakeFiles/BookTester.dir/src/test.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/test.cpp.i
 .PHONY : src/test.cpp.i
 
 src/test.s: src/test.cpp.s
@@ -198,7 +198,7 @@ src/test.s: src/test.cpp.s
 
 # target to generate assembly for a file
 src/test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookTester.dir/build.make CMakeFiles/BookTester.dir/src/test.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/test.cpp.s
 .PHONY : src/test.cpp.s
 
 # Help Target
@@ -209,7 +209,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... BookTester"
+	@echo "... a"
 	@echo "... src/Book.o"
 	@echo "... src/Book.i"
 	@echo "... src/Book.s"

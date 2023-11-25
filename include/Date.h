@@ -4,17 +4,17 @@
 class Date{
 public:
     class InvalidDate{};  
+    Date();
 
     Date(int dd, int mm, int yy); 
     
     int getDay() const;
     int getMonth() const;
     int getYear() const;
+     bool is_valid() const;
 
     bool operator==(const Date& other) const;// overloading operator==
     void operator=(const Date& other);// overloading operator=
-    
-    bool is_valid() const;
 
 private:
     int d, m, y;

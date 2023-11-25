@@ -1,8 +1,8 @@
+#include <string>
+#include "Date.h"
+
 #ifndef BOOK_H
 #define BOOK_H
-
-#include "Date.h"
-#include<string>
 
 class Book{
     
@@ -71,9 +71,9 @@ private:
     Date date; // data di copyright
     bool available; // stato in prestito --> false, disponibile --> true
 
-}
+};
 
 // overloading operator<< (row print of data)
-// std::ostream& operator<<(std::ostream& os, const Book& item);
+std::ostream& operator<<(std::ostream& os, const Book& item);
 
 #endif // BOOK_H

@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/bertaleo/progetto-intermedio
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/BookTester.dir/all
+all: CMakeFiles/a.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/BookTester.dir/clean
+clean: CMakeFiles/a.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/BookTester.dir
+# Target rules for target CMakeFiles/a.dir
 
 # All Build rule for target.
-CMakeFiles/BookTester.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookTester.dir/build.make CMakeFiles/BookTester.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookTester.dir/build.make CMakeFiles/BookTester.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bertaleo/progetto-intermedio/CMakeFiles --progress-num=1,2,3,4 "Built target BookTester"
-.PHONY : CMakeFiles/BookTester.dir/all
+CMakeFiles/a.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bertaleo/progetto-intermedio/CMakeFiles --progress-num=1,2,3,4 "Built target a"
+.PHONY : CMakeFiles/a.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/BookTester.dir/rule: cmake_check_build_system
+CMakeFiles/a.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bertaleo/progetto-intermedio/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BookTester.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/a.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bertaleo/progetto-intermedio/CMakeFiles 0
-.PHONY : CMakeFiles/BookTester.dir/rule
+.PHONY : CMakeFiles/a.dir/rule
 
 # Convenience name for target.
-BookTester: CMakeFiles/BookTester.dir/rule
-.PHONY : BookTester
+a : CMakeFiles/a.dir/rule
+.PHONY : a
 
 # clean rule for target.
-CMakeFiles/BookTester.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookTester.dir/build.make CMakeFiles/BookTester.dir/clean
-.PHONY : CMakeFiles/BookTester.dir/clean
+CMakeFiles/a.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/clean
+.PHONY : CMakeFiles/a.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

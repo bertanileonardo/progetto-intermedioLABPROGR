@@ -11,6 +11,19 @@ Date::Date(int dd, int mm, int yy)
         throw InvalidDate();
 }
 
+/*  
+    costruttore di default solo per far funzionare il compilatore 
+    così che lo possa trovare per costruire l'oggetto Date, 
+    poi i dati verranno sovrascritti dalla data effettiva o 
+    dalla Data di Gutemberg
+*/
+Date::Date()
+{
+    d = 0;
+    m = 0;
+    y = 0;
+}
+
 int Date::days_in_month[13] = {0, 31, 0, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; // non uso la posizione [0]
 
 bool Date::is_valid() const
@@ -45,7 +58,7 @@ bool Date::operator==(const Date& other) const {
 }    
 
 // overloading operator=
-void Date::operator=(Date& other){
+void Date::operator=(const Date& other){
     d = other.getDay();
     m = other.getMonth();
     y = other.getYear();
