@@ -1,1 +1,1 @@
-/usr/bin/c++ -rdynamic CMakeFiles/a.dir/src/Book.cpp.o CMakeFiles/a.dir/src/Date.cpp.o CMakeFiles/a.dir/src/test.cpp.o -o a 
+/usr/bin/c++ -rdynamic CMakeFiles/a.dir/src/Book.cpp.o CMakeFiles/a.dir/src/BookShelf.cpp.o CMakeFiles/a.dir/src/Date.cpp.o CMakeFiles/a.dir/src/main.cpp.o -o a 

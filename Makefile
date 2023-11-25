@@ -153,6 +153,30 @@ src/Book.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/Book.cpp.s
 .PHONY : src/Book.cpp.s
 
+src/BookShelf.o: src/BookShelf.cpp.o
+.PHONY : src/BookShelf.o
+
+# target to build an object file
+src/BookShelf.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/BookShelf.cpp.o
+.PHONY : src/BookShelf.cpp.o
+
+src/BookShelf.i: src/BookShelf.cpp.i
+.PHONY : src/BookShelf.i
+
+# target to preprocess a source file
+src/BookShelf.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/BookShelf.cpp.i
+.PHONY : src/BookShelf.cpp.i
+
+src/BookShelf.s: src/BookShelf.cpp.s
+.PHONY : src/BookShelf.s
+
+# target to generate assembly for a file
+src/BookShelf.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/BookShelf.cpp.s
+.PHONY : src/BookShelf.cpp.s
+
 src/Date.o: src/Date.cpp.o
 .PHONY : src/Date.o
 
@@ -177,29 +201,29 @@ src/Date.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/Date.cpp.s
 .PHONY : src/Date.cpp.s
 
-src/test.o: src/test.cpp.o
-.PHONY : src/test.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-src/test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/test.cpp.o
-.PHONY : src/test.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-src/test.i: src/test.cpp.i
-.PHONY : src/test.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-src/test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/test.cpp.i
-.PHONY : src/test.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-src/test.s: src/test.cpp.s
-.PHONY : src/test.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-src/test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/test.cpp.s
-.PHONY : src/test.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -213,12 +237,15 @@ help:
 	@echo "... src/Book.o"
 	@echo "... src/Book.i"
 	@echo "... src/Book.s"
+	@echo "... src/BookShelf.o"
+	@echo "... src/BookShelf.i"
+	@echo "... src/BookShelf.s"
 	@echo "... src/Date.o"
 	@echo "... src/Date.i"
 	@echo "... src/Date.s"
-	@echo "... src/test.o"
-	@echo "... src/test.i"
-	@echo "... src/test.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

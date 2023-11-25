@@ -4,6 +4,7 @@ project(progetto-intermedio LANGUAGES CXX)
 
 add_executable(a
     src/Book.cpp
+    src/BookShelf.cpp  
     src/Date.cpp
-    src/test.cpp    
+    src/main.cpp  
 )

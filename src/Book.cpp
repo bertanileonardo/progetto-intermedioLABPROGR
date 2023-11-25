@@ -31,6 +31,15 @@ bool Book::get_availability() const { return available; }
 
 // costruttore
 
+Book::Book(){
+    isbn="";               
+    title="";              
+    author_name="";        
+    author_surname="";     
+    date=dateGut;  
+    available=false;
+};
+
 // costruttore con date implicita - 3 febbraio 1468 Morte di Gutenberg
 Book::Book(
     std::string i_author_name,

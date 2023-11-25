@@ -1,5 +1,6 @@
 #include <iostream>
 #include "../include/Book.h"
+#include "../include/BookShelf.h"
 
 int main(){
     Book mybook("David", "Foster Wallace", "Una cosa divertente che non farò mai più", "887-521-837-4");
@@ -19,6 +20,21 @@ int main(){
     Book mybook4("David", "Foster Wallace", "Una cosa divertente che non farò mai più", "887-521-837-6", date);
 
     std::cout << mybook4 << std::endl;
+
+
+    BookShelf shelf(10);
+    
+    std::cout<<"vettore creato correttamente";
+
+    shelf.push_back(mybook);
+    shelf.push_back(mybook2);
+
+    std::cout<<shelf;
+
+    Book removed_book = shelf.pop_back();
+
+    std::cout<<"removed: "<<std::endl<<removed_book;
+
 
     return 0;
 }

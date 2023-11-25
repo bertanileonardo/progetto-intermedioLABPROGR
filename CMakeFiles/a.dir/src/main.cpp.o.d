@@ -1,5 +1,5 @@
-CMakeFiles/a.dir/src/test.cpp.o: \
- /home/bertaleo/progetto-intermedio/src/test.cpp \
+CMakeFiles/a.dir/src/main.cpp.o: \
+ /home/bertaleo/progetto-intermedio/src/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

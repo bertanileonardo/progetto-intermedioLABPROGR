@@ -83,10 +83,24 @@ CMakeFiles/a.dir/src/Book.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a.dir/src/Book.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bertaleo/progetto-intermedio/src/Book.cpp -o CMakeFiles/a.dir/src/Book.cpp.s
 
+CMakeFiles/a.dir/src/BookShelf.cpp.o: CMakeFiles/a.dir/flags.make
+CMakeFiles/a.dir/src/BookShelf.cpp.o: src/BookShelf.cpp
+CMakeFiles/a.dir/src/BookShelf.cpp.o: CMakeFiles/a.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bertaleo/progetto-intermedio/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/a.dir/src/BookShelf.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/a.dir/src/BookShelf.cpp.o -MF CMakeFiles/a.dir/src/BookShelf.cpp.o.d -o CMakeFiles/a.dir/src/BookShelf.cpp.o -c /home/bertaleo/progetto-intermedio/src/BookShelf.cpp
+
+CMakeFiles/a.dir/src/BookShelf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a.dir/src/BookShelf.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bertaleo/progetto-intermedio/src/BookShelf.cpp > CMakeFiles/a.dir/src/BookShelf.cpp.i
+
+CMakeFiles/a.dir/src/BookShelf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a.dir/src/BookShelf.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bertaleo/progetto-intermedio/src/BookShelf.cpp -o CMakeFiles/a.dir/src/BookShelf.cpp.s
+
 CMakeFiles/a.dir/src/Date.cpp.o: CMakeFiles/a.dir/flags.make
 CMakeFiles/a.dir/src/Date.cpp.o: src/Date.cpp
 CMakeFiles/a.dir/src/Date.cpp.o: CMakeFiles/a.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bertaleo/progetto-intermedio/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/a.dir/src/Date.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bertaleo/progetto-intermedio/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/a.dir/src/Date.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/a.dir/src/Date.cpp.o -MF CMakeFiles/a.dir/src/Date.cpp.o.d -o CMakeFiles/a.dir/src/Date.cpp.o -c /home/bertaleo/progetto-intermedio/src/Date.cpp
 
 CMakeFiles/a.dir/src/Date.cpp.i: cmake_force
@@ -97,35 +111,37 @@ CMakeFiles/a.dir/src/Date.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a.dir/src/Date.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bertaleo/progetto-intermedio/src/Date.cpp -o CMakeFiles/a.dir/src/Date.cpp.s
 
-CMakeFiles/a.dir/src/test.cpp.o: CMakeFiles/a.dir/flags.make
-CMakeFiles/a.dir/src/test.cpp.o: src/test.cpp
-CMakeFiles/a.dir/src/test.cpp.o: CMakeFiles/a.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bertaleo/progetto-intermedio/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/a.dir/src/test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/a.dir/src/test.cpp.o -MF CMakeFiles/a.dir/src/test.cpp.o.d -o CMakeFiles/a.dir/src/test.cpp.o -c /home/bertaleo/progetto-intermedio/src/test.cpp
+CMakeFiles/a.dir/src/main.cpp.o: CMakeFiles/a.dir/flags.make
+CMakeFiles/a.dir/src/main.cpp.o: src/main.cpp
+CMakeFiles/a.dir/src/main.cpp.o: CMakeFiles/a.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bertaleo/progetto-intermedio/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/a.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/a.dir/src/main.cpp.o -MF CMakeFiles/a.dir/src/main.cpp.o.d -o CMakeFiles/a.dir/src/main.cpp.o -c /home/bertaleo/progetto-intermedio/src/main.cpp
 
-CMakeFiles/a.dir/src/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a.dir/src/test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bertaleo/progetto-intermedio/src/test.cpp > CMakeFiles/a.dir/src/test.cpp.i
+CMakeFiles/a.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bertaleo/progetto-intermedio/src/main.cpp > CMakeFiles/a.dir/src/main.cpp.i
 
-CMakeFiles/a.dir/src/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a.dir/src/test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bertaleo/progetto-intermedio/src/test.cpp -o CMakeFiles/a.dir/src/test.cpp.s
+CMakeFiles/a.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bertaleo/progetto-intermedio/src/main.cpp -o CMakeFiles/a.dir/src/main.cpp.s
 
 # Object files for target a
 a_OBJECTS = \
 "CMakeFiles/a.dir/src/Book.cpp.o" \
+"CMakeFiles/a.dir/src/BookShelf.cpp.o" \
 "CMakeFiles/a.dir/src/Date.cpp.o" \
-"CMakeFiles/a.dir/src/test.cpp.o"
+"CMakeFiles/a.dir/src/main.cpp.o"
 
 # External object files for target a
 a_EXTERNAL_OBJECTS =
 
 a : CMakeFiles/a.dir/src/Book.cpp.o
+a : CMakeFiles/a.dir/src/BookShelf.cpp.o
 a : CMakeFiles/a.dir/src/Date.cpp.o
-a : CMakeFiles/a.dir/src/test.cpp.o
+a : CMakeFiles/a.dir/src/main.cpp.o
 a : CMakeFiles/a.dir/build.make
 a : CMakeFiles/a.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bertaleo/progetto-intermedio/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bertaleo/progetto-intermedio/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable a"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/a.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

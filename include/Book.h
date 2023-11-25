@@ -29,7 +29,7 @@ public:
     bool get_availability() const ;
 
     // costruttore
-
+    Book();
     // costruttore con date implicita - 3 febbraio 1468 Morte di Gutenberg
     explicit Book(
         std::string i_author_name,
@@ -64,12 +64,15 @@ private:
     // controllo isbn
     void isbn_isValid();
 
-    std::string isbn; // isbn libro da limitare a 13 caratteri
-    std::string title; // titolo libro
-    std::string author_name; // nome autore
-    std::string author_surname; // cognome autore
-    Date date; // data di copyright
-    bool available; // stato in prestito --> false, disponibile --> true
+    std::string isbn;               // isbn libro da limitare a 13 caratteri
+    std::string title;              // titolo libro
+    std::string author_name;        // nome autore
+    std::string author_surname;     // cognome autore
+    Date date;                      // data di copyright
+
+    bool available;                 // stato 
+                                    // prestito --> false, 
+                                    // disponibile --> true
 
 };
 
