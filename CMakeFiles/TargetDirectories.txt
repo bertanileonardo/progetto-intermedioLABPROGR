@@ -1,3 +1,0 @@
-/home/bertaleo/progetto-intermedio/CMakeFiles/a.dir
-/home/bertaleo/progetto-intermedio/CMakeFiles/edit_cache.dir
-/home/bertaleo/progetto-intermedio/CMakeFiles/rebuild_cache.dir

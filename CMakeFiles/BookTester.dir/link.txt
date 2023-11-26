@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/BookTester.dir/src/Book.cpp.o CMakeFiles/BookTester.dir/src/Date.cpp.o CMakeFiles/BookTester.dir/src/test.cpp.o -o BookTester 
