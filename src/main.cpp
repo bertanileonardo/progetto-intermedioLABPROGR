@@ -45,7 +45,7 @@ int main(){
 
     Book removed_book = shelf.pop_back();
 
-    std::cout<<"** Rimuovo l'ultimo: "<<std::endl<<std::endl<<removed_book;
+    std::cout<<"** Rimuovo l'ultimo elemento: "<<std::endl<<std::endl<<removed_book;
 
     std::cout<<std::endl;
 
