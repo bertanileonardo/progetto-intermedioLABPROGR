@@ -22,9 +22,21 @@ public:
 
   // Ritorna dimensione buffer
   int my_buffer_size() const; 
+
+  // costruttore di Copia
+  BookShelf(const BookShelf& item);
+
+  // costruttore di Move
+  BookShelf(BookShelf&& item);
+
+  // overloading operatore Copia
+  BookShelf& operator=(const BookShelf& item);
+
+  // overloading operatore Move
+  BookShelf& operator=(BookShelf&& item);
   
   // overloading operator[]
-  Book& operator[](int index); // operator[] ritorna una reference a un
+  Book& operator[](int index);    // operator[] ritorna una reference a un
                                   // Book nella versione _non_ cost
       
   Book operator[](int index) const;

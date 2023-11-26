@@ -13,8 +13,8 @@ public:
     int getYear() const;
      bool is_valid() const;
 
-    bool operator==(const Date& other) const;// overloading operator==
-    void operator=(const Date& other);// overloading operator=
+    bool operator==(const Date& other) const;   // overloading operator==
+    void operator=(const Date& other);              // overloading operator=
 
 private:
     int d, m, y;
