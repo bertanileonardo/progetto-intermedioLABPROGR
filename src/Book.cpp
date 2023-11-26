@@ -14,7 +14,7 @@ std::string Book::get_author_surname() const { return author_surname; }
 std::string Book::get_title() const { return title; }
 
 std::string Book::get_string_date() const {
-    if(!(get_date().is_valid())||date == dateGut) { return "unvalid date"; }
+    if(!(get_date().is_valid())||date == dateGut) { return "undefined"; }
 
     //stringa con la data di copyright
     std::string stringDate =           
